@@ -182,3 +182,7 @@ app_license = "MIT"
 # 	"library_management.auth.validate"
 # ]
 
+
+fixtures = ['Custom Field']
+
+

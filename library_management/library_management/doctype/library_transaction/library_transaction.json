@@ -1,48 +1,44 @@
 {
  "actions": [],
- "autoname": "phone",
- "creation": "2021-06-13 19:46:45.890987",
+ "creation": "2021-06-13 20:53:27.533311",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "first_name",
-  "last_name",
-  "full_name",
-  "email_address",
-  "phone",
+  "article",
+  "library_member",
+  "type",
+  "date",
   "amended_from"
  ],
  "fields": [
   {
-   "fieldname": "first_name",
-   "fieldtype": "Data",
+   "fieldname": "article",
+   "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "First Name",
+   "label": "ArticleLib",
+   "options": "ArticleLib",
    "reqd": 1
   },
   {
-   "fieldname": "last_name",
-   "fieldtype": "Data",
+   "fieldname": "library_member",
+   "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Last Name",
+   "label": "Library Member",
+   "options": "Library Member",
    "reqd": 1
   },
   {
-   "fieldname": "full_name",
-   "fieldtype": "Read Only",
-   "label": "Full Name"
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "Issue\nReturn"
   },
   {
-   "fieldname": "email_address",
-   "fieldtype": "Data",
-   "label": "Email Address",
-   "reqd": 1
-  },
-  {
-   "fieldname": "phone",
-   "fieldtype": "Data",
-   "label": "Phone",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
    "reqd": 1
   },
   {
@@ -50,17 +46,18 @@
    "fieldtype": "Link",
    "label": "Amended From",
    "no_copy": 1,
-   "options": "Library Member",
+   "options": "Library Transaction",
    "print_hide": 1,
    "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2021-06-13 20:55:31.474909",
+ "modified": "2021-06-13 20:55:03.378477",
  "modified_by": "Administrator",
  "module": "Library Management",
- "name": "Library Member",
+ "name": "Library Transaction",
  "owner": "Administrator",
  "permissions": [
   {
